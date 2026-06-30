@@ -70,7 +70,7 @@ async def telegram_webhook(request: Request):
 
 
 def main():
-    uvicorn.run("app.main:app", host="0.0.0.0", port=settings.port, reload=False, workers=1)
+    uvicorn.run(app, host="0.0.0.0", port=settings.port, reload=False, workers=1)
 
 
 if __name__ == "__main__":
